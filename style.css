@@ -1,0 +1,149 @@
+/*------------Universal--------------*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+    font-size: 1.05rem;
+}
+
+/*------------Container--------------*/
+
+.container {
+	min-height: 100vh;
+	max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    background-image: url(images/carolina-cossio-Ucwd8w-JHwM-unsplash.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+
+/*------------Title--------------*/
+
+.brand {
+	color: #52bf90;
+	font-size: 60px;
+}
+
+/*------------Search--------------*/
+
+.search-wrapper form {
+	margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.search-box {
+	width: 60%;
+	padding: 1rem;
+	font-size: 1.1rem;
+	outline: 0;
+    border: 2px solid #52bf90;
+    color: #52bf90;
+    border-radius: 2rem;
+}
+
+.search-box::placeholder {
+    color: #52bf90;
+}
+
+/*------------Search Results--------------*/
+
+.search-result {
+	margin-top: 50px;
+	width: 100%;
+	display: grid;
+	grid-gap: 25px;
+	grid-template: auto / repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.item {
+	width: 100%;
+	border-radius: 8px;
+	background-color: #52bf90;
+	padding: 15px;
+	overflow: hidden;
+	align-items: center;
+}
+
+.item img {
+	width: 100%;
+	height: 300px;
+	border-radius: 4px;
+}
+
+.item .flex-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.item .title {
+	color: whitesmoke;
+	margin: 10px;
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+.view-button {
+	text-decoration: none;
+	text-align: center;
+	border-radius: 8px;
+	width: 200px;
+	padding: 5px;
+	background-color: #bae1ff;
+	color: white;
+	font-size: 1.4rem;
+	margin-top: 20px;
+	align-self: flex-start;
+}
+
+.item-data {
+	color: whitesmoke;
+	display: block;
+	margin-top: 10px;
+	font-size: 1rem;
+	letter-spacing: 0.05rem;
+	line-height: 2rem;
+	text-align: left;
+}
+
+.item-datas {
+	color: whitesmoke;
+	display: block;
+	margin-top: 10px;
+	font-size: 10px;
+	text-align: left;
+}
+
+/*------------Responsive--------------*/
+
+@media (max-width: 566px) {
+	.brand {
+		font-size: 50px;
+	}
+	.search-box {
+		padding: 0.5rem;
+		font-size: 0.8rem;
+		width: 80%;
+	}
+	.search-result {
+		grid-gap: 10px;
+	}
+}
+
+@media (max-width: 768px) {
+	.search-result {
+		grid-gap: 10px;
+	}
+}
+
+
